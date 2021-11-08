@@ -9,6 +9,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+    },
+    {
       name: 'client',
       title: 'Client',
       type: 'reference',
@@ -49,7 +54,15 @@ export default {
       type: 'blockContent',
     },
   ],
-
+  orderings: [
+    {
+      title: 'Published At',
+      name: 'publishedAt',
+      by: [
+        {field: 'publishedAt', direction: 'asc'}
+      ]
+    },
+  ],
   preview: {
     select: {
       title: 'title',
