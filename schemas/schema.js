@@ -11,6 +11,7 @@ import project from './project'
 import post from './post'
 import client from './client'
 import author from './author'
+import page from './page'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -26,6 +27,7 @@ export default createSchema({
     author,
     client,
     category,
+    page,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
